@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore various business categories in our directory.">
+    <meta name="theme-color" content="#4CAF50">
+    <title>Business Directory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+          </style>
+</head>
+
+<body>
+    <header>
+        <h1>LESOTHO HUB</h1>
+    </header>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="tips.html">TIPS</a>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <header>Business Directory</header>
+
+            <!-- Farmers Category -->
+            <div class="category" id="category1">
+                <img src="Farmers.jpg" alt="Farmers at work in a field">
+                <h2>FARMERS</h2>
+                <p class="hint">View products</p>
+                <div class="product-details">
+                    <div class="product" id="product1">
+                        <img src="cabbage.jpg" alt="Fresh Cabbage" onclick="openModal(this)">
+                        <strong>Fresh Cabbage</strong><br>
+                        <em>M1.50 each</em><br>
+                        Delicious, organic cabbage perfect for salads and cooking.
+                    </div>
+                    <div class="product" id="product2">
+                        <img src="carrots.jpg" alt="Organic Carrots" onclick="openModal(this)">
+                        <strong>Organic Carrots</strong><br>
+                        <em>M2.00 per lb</em><br>
+                        Crunchy and sweet, these carrots are great for snacking.
+                    </div>
+                    <div class="product" id="product3">
+                        <img src="strawberry.jpg" alt="Juicy Strawberries" onclick="openModal(this)">
+                        <strong>Juicy Strawberries</strong><br>
+                        <em>M3.00 per lb</em><br>
+                        Freshly picked strawberries, perfect for desserts or smoothies.
+                    </div>
+                    <div class="product-nav-buttons">
+                        <button onclick="showPreviousProduct()">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <button onclick="showNextProduct()">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports Category -->
+            <div class="category" id="category2">
+                <img src="Sportss.jpg" alt="Sports Equipment">
+                <h2>SPORTS</h2>
+                <p class="hint">View products</p>
+                <div class="product-details">
+                    <div class="product" id="product4">
+                        <img src="tennis.jpg" alt="Tennis Ball" onclick="openModal(this)">
+                        <strong>Tennis Ball</strong><br>
+                        <em>M100.00</em><br>
+                        High-quality tennis ball for training and matches.
+                    </div>
+                    <div class="product" id="product5">
+                        <img src="basket-ball.jpg" alt="Basket ball" onclick="openModal(this)">
+                        <strong>Basketball</strong><br>
+                        <em>M200.00</em><br>
+                        Professional-grade baseball .
+                    </div>
+                    <div class="product" id="product6">
+                        <img src="soccer-ball.jpg" alt="Soccer Ball" onclick="openModal(this)">
+                        <strong>Soccer Ball</strong><br>
+                        <em>M299.99</em><br>
+                        Durable soccer ball suitable for all ages.
+                    </div>
+                    <div class="product-nav-buttons">
+                        <button onclick="showPreviousProduct()">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <button onclick="showNextProduct()">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fashion Category -->
+            <div class="category" id="category4">
+                <img src="fashion.jpg" alt="Fashion products">
+                <h2>FASHION</h2>
+                <p class="hint">View products</p>
+                <div class="product-details">
+                    <div class="product" id="product7">
+                        <img src="dress.jpg" alt="Stylish Dress" onclick="openModal(this)">
+                        <strong>Stylish Dress</strong><br>
+                        <em>M599.99</em><br>
+                        Elegant dress perfect for special occasions.
+                    </div>
+                    <div class="product" id="product8">
+                        <img src="shoes.jpg" alt="Casual Shoes" onclick="openModal(this)">
+                        <strong>Casual Shoes</strong><br>
+                        <em>M799.99</em><br>
+                        Comfortable shoes for everyday wear.
+                    </div>
+                    <div class="product-nav-buttons">
+                        <button onclick="showPreviousProduct()">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <button onclick="showNextProduct()">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food & Beverages Category -->
+            <div class="category" id="category5">
+                <img src="food.jpg" alt="Food and Beverages">
+                <h2>FOOD & BEVERAGES</h2>
+                <p class="hint">View products</p>
+                <div class="product-details">
+                    <div class="product" id="product9">
+                        <img src="coffee.jpg" alt="Coffee" onclick="openModal(this)">
+                        <strong>Fresh Coffee</strong><br>
+                        <em>M50.00 per cup</em><br>
+                        Delicious coffee sourced from the best beans.
+                    </div>
+                    <div class="product" id="product10">
+                        <img src="fruit-juice.jpg" alt="Fruit Juice" onclick="openModal(this)">
+                        <strong>Fruit Juice</strong><br>
+                        <em>M30.00 per bottle</em><br>
+                        Freshly squeezed fruit juice, perfect for hydration.
+                    </div>
+                    <div class="product-nav-buttons">
+                        <button onclick="showPreviousProduct()">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <button onclick="showNextProduct()">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health & Beauty Category -->
+            <div class="category" id="category6">
+                <img src="beauty.jpg" alt="Health and Beauty products">
+                <h2>HEALTH & BEAUTY</h2>
+                <p class="hint">View products</p>
+                <div class="product-details">
+                    <div class="product" id="product11">
+                        <img src="skin-care.jpg" alt="Skincare Product" onclick="openModal(this)">
+                        <strong>Skincare Product</strong><br>
+                        <em>M250.00</em><br>
+                        Nourishing skincare cream for all skin types.
+                    </div>
+                    <div class="product" id="product12">
+                        <img src="makeup.jpg" alt="Makeup Product" onclick="openModal(this)">
+                        <strong>Makeup Product</strong><br>
+                        <em>M350.00</em><br>
+                        High-quality makeup for a flawless look.
+                    </div>
+                    <div class="product-nav-buttons">
+                        <button onclick="showPreviousProduct()">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <button onclick="showNextProduct()">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <button onclick="showPreviousCategory()">
+                    <i class="fas fa-chevron-left"></i> Previous Category
+                </button>
+                <button onclick="showNextCategory()">
+                    Next Category <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01" alt="Enlarged Image">
+    </div>
+    <footer>
+        &copy;2023
+    </footer>
+
+    <script>
+        let currentCategoryIndex = 0;
+        let currentProductIndex = 0;
+
+        const categories = document.querySelectorAll('.category');
+        const productContainers = document.querySelectorAll('.product-details');
+
+        function showCategory(index) {
+            categories.forEach((category, i) => {
+                category.style.display = (i === index) ? 'flex' : 'none';
+            });
+            currentProductIndex = 0; 
+            showProduct(currentProductIndex);
+        }
+
+        function showProduct(index) {
+            const products = productContainers[currentCategoryIndex].querySelectorAll('.product');
+            products.forEach((product, i) => {
+                product.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function showNextCategory() {
+            currentCategoryIndex = (currentCategoryIndex + 1) % categories.length;
+            showCategory(currentCategoryIndex);
+        }
+
+        function showPreviousCategory() {
+            currentCategoryIndex = (currentCategoryIndex - 1 + categories.length) % categories.length;
+            showCategory(currentCategoryIndex);
+        }
+
+        function showNextProduct() {
+            const products = productContainers[currentCategoryIndex].querySelectorAll('.product');
+            currentProductIndex = (currentProductIndex + 1) % products.length;
+            showProduct(currentProductIndex);
+        }
+
+        function showPreviousProduct() {
+            const products = productContainers[currentCategoryIndex].querySelectorAll('.product');
+            currentProductIndex = (currentProductIndex - 1 + products.length) % products.length;
+            showProduct(currentProductIndex);
+        }
+
+        function openModal(img) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("img01");
+            modal.style.display = "flex"; 
+            modalImg.src = img.src; 
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none"; 
+        }
+
+        
+        window.onclick = function(event) {
+            const modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        
+        showCategory(currentCategoryIndex);
+    </script>
+</body>
+</html>

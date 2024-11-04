@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tips Page</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1>LESOTHO HUB</h1>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="tips.html">TIPS</a>
+        </div>
+    </header>
+    <main>
+        <h2 class="head2-tips">Business Tips</h2>
+        <p class="tips-p">Lesotho Hub is all about empowering small businesses across Lesotho.
+            Our online platform connects local entrepreneurs with a wider audience, making it
+            easier for them to showcase and sell their products. We aim to foster growth and sustainability
+            within the community by providing visibility and access to a diverse range of local goods.
+            Lesotho Hub celebrates the spirit of entrepreneurship and the rich cultural heritage of Lesotho
+            while helping local businesses thrive in a digital world.
+        </p>
+        <div class="farmers">
+            <div class="cartegory1">
+                <h3>Here are some tips to help grow your business</h3>
+                <div class="content">
+                    <ul>
+                        <li>Understand your market</li>
+                        <li>Build strong customer relationships</li>
+                        <li>Leverage social media</li>
+                        <li>Keep track of your finances</li>
+                        <li>Invest in your employees</li>
+                    </ul>
+                </div>
+                <span class="view-more" id="toggle-view">Read more</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023
+    </footer>
+
+    <script>
+        
+        document.getElementById('toggle-view').addEventListener('click', function () {
+            const content = document.querySelector('.content');
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                this.textContent = 'Read less';
+            } else {
+                content.style.display = 'none';
+                this.textContent = 'Read more';
+            }
+        });
+    </script>
+</body>
+
+</html>

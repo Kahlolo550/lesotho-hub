@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; 
+            display: flex;
+            flex-direction: column;
+            height: 100vh; 
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #2c3e50;
+            margin: 0 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #4CAF50;
+            transform: translateY(-2px);
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px; /* Add margin to create space */
+        }
+
+        .container1 {
+            width: 100%;
+            max-width: 600px; /* Set max-width for the main content */
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .head2-ab {
+            margin-bottom: 20px; /* Space below heading */
+        }
+
+        .about-p {
+            margin: 15px 0; /* Space above and below paragraphs */
+            line-height: 1.6; /* Improve readability */
+            text-align: justify; /* Justify text */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative; /* Position relative to allow for footer spacing */
+        }
+
+        @media (max-width: 600px) {
+            .navbar a {
+                font-size: 16px;
+            }
+
+            .container1 {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body class="about">
+    <header>
+        <h1>LESOTHO HUB</h1>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="tips.html">TIPS</a>
+        </div>
+    </header>
+    <main>
+        <div class="container1">
+            <div class="head2-ab">
+                <h2>About Lesotho Hub</h2>
+            </div>
+            <p class="about-p">Lesotho Hub is all about empowering small businesses across Lesotho.
+                Our online platform connects local entrepreneurs with a wider audience, making it
+                easier for them to showcase and sell their products. We aim to foster growth and sustainability
+                within the community by providing visibility and access to a diverse range of local goods.
+                Lesotho Hub celebrates the spirit of entrepreneurship and the rich cultural heritage of Lesotho,
+                while helping local businesses thrive in a digital world.
+            </p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023
+    </footer>
+</body>
+
+</html>

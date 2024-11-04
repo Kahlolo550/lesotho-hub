@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore various business categories in our directory.">
+    <meta name="theme-color" content="#4CAF50">
+    <title>Business Directory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LESOTHO HUB</h1>
+    </header>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="tips.html">TIPS</a>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <header>Contact Us</header>
+
+            
+            <form action="#" method="POST" class="c-form" name="c-form" id="c-form" onsubmit="return Vali();">
+                <input type="text" name="name" placeholder="Your Name" class="name" required>
+                <input type="email" name="email" placeholder="Your Email" class="email" required>
+                <input type="text" name="telephone" placeholder="Your Telephone number" class="telephone" required> 
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit" name="submit" id="submit">Send Message</button>
+            </form>
+
+            
+            <section id="contact-details" class="contact-details">
+                <h2>Contact Details</h2>
+                <p><i class="fas fa-phone"></i><strong>Phone:</strong> +266 5735 4839</p>
+                <p><i class="fas fa-envelope"></i><strong>Email:</strong> kahlolotlanya11@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Maseru, Lesotho</p>
+            </section>
+
+            
+            <section id="media" class="media">
+                <h2>Connect with Us</h2>
+                <p><a href="http://facebook.com/FafynoTlanya" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+                <p><a href="http://twitter.com/fafyno" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></p>
+                <p><a href="http://instagram.com/fafyno" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        &copy;2023
+    </footer>
+
+    <script>
+        function Vali() {
+            let name = document.forms["c-form"]["name"].value;
+            let email = document.forms["c-form"]["email"].value;
+            let telephone = document.forms["c-form"]["telephone"].value;
+            let message = document.forms["c-form"]["message"].value;
+    
+            if (name == "") {
+                alert("Name is not filled out!");
+                return false;
+            }
+            if (email == "") {
+                alert("Email is not filled out!");
+                return false;
+            }
+            if (telephone == "") {
+                alert("Telephone is not filled out!");
+                return false;
+            }
+            if (message == "") {
+                alert("Message section is empty!");
+                return false;
+            }
+            return true; // Return true if all validations pass
+        }
+    </script>
+    
+</body>
+</html>
